@@ -46,6 +46,8 @@ class ModelTrainer:
                 'CatBoosting regressor':CatBoostRegressor(verbose=False),
                 'AdaBoost Regressor':AdaBoostRegressor(),
             }
+
+            
             model_report=evaluate_models(x_train=x_train,y_train=y_train,x_test=x_test,y_test=y_test,models=models)
             best_model_score=max(sorted(model_report.values()))
 

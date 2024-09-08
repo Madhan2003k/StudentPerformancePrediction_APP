@@ -119,11 +119,10 @@ celerybeat-schedule
 celerybeat.pid
 
 # SageMath parsed files
-
 *.sage.py
 
 # Environments
-.artifacts/
+
 .env
 .venv
 env/
